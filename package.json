@@ -2,6 +2,9 @@
   "name": "tasks-crud",
   "version": "0.0.1",
   "description": "",
+  "engines": {
+    "node": "18.x"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node",
