@@ -1,5 +1,4 @@
 import express from 'express';
-import exphbs from 'express-handlebars';
 import indexRoutes from './routes/index.routes';
 import path from 'path';
 import { create } from 'express-handlebars';
@@ -26,5 +25,9 @@ app.use(express.urlencoded({ extended: false }));
 
 // Routes
 app.use(indexRoutes);
+
+// Static files
+
+app.use(express.static(path.join(__dirname, "public")));
 
 export default app;
